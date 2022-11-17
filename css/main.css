@@ -1,0 +1,82 @@
+:root{
+    --azul: #0084FF;
+    --azul-escuro: #00161C;
+    --azul-claro: #56CCF2;
+
+    --roxo: #B04CD9;
+    --vermelho: #E33B3B;
+    --white: #fff;
+    --cinza: #333333;
+    --cinza-claro: #4F4C4C;
+    --cinza-super-claro: #DFE3E5;
+    --laranja: #B72E2E;
+    --beje: #F7F4F4;
+    --preto_escuro: rgba(0, 0, 0, 0.063);
+
+    --fonte-montserrat: 'Montserrat', sans-serif;
+    --fonte-sans: 'Open Sans', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--fonte-sans);
+}
+
+.container{
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    width: 100%;
+    height: 45px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: white 1px solid;
+    border-radius: 5px;
+
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--fonte-montserrat);
+}
+
+.title__h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--fonte-sans);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--cinza-claro);
+}
+
+.title__h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title__h4{
+    font-size: 1.3rem;
+    line-height: 26px;
+}
+
+.title__h5{
+    font-size: 1.06rem;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        padding: 40px 52px;
+    }
+}

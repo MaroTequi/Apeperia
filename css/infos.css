@@ -1,0 +1,64 @@
+.infos{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 8%;
+}
+
+.infos__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.infos__lista__item{
+    padding-left: 40px;    
+}
+
+.infos__tempo{
+    background-image: url(../Img/icone__relogio.png);
+    background-repeat: no-repeat;
+}
+
+.infos__foco{
+    background-image: url(../Img/icone__quimica.png);
+    background-repeat: no-repeat;
+}
+
+.infos__especialistas{
+    background-image: url(../Img/icone__dinheiro.png);
+    background-repeat: no-repeat;
+}
+
+.infos__lista__item__h3{
+    color: var(--cinza-claro);
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .infos{
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .infos__lista{
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .infos{
+        background-color: var(--beje);
+    }
+
+    .infos__lista{
+        max-width: 800px;
+
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .infos__lista__item{
+        max-width: 320px;
+    }
+}

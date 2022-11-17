@@ -1,0 +1,33 @@
+.destaques{
+    background-color: #DFE3F5;
+
+    align-items: center;
+    gap: 25px;
+}
+
+.destaques__titulo{
+    align-self: center;
+    
+    font-size: 24px;
+    
+    color: var(--cinza-claro);
+}
+
+.destaques__container__imagem{
+    width: 100%;
+}
+
+.destaques__container__botao{
+    color: var(--laranja);
+    border-color: var(--laranja);
+}
+
+@media screen and (min-width:768px){
+    .destaques__container{
+        max-width: 30rem;
+    }
+
+    .destaques__container__botao{
+        max-width: 350px;
+    }
+}

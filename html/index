@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Apeperia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/titulo.css">
+    <link rel="stylesheet" href="../css/destaques.css">
+    <link rel="stylesheet" href="../css/infos.css">
+    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="stylesheet" href="../css/planos.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/institucional.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container cabecalho">
+            <a class="cabecalho__img" href="../html/index.html">
+                <img src="../Img/Logo do Apeperia.png" alt="Logo Apeperia">
+            </a>
+            <ul class="cabecalho__menu">
+                <li class="cabecalho__menu__item">
+                    <a href="#" class="cabecalho__menu__item__opcao">Sobre</a>
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a href="#" class="cabecalho__menu__item__opcao">Planos</a>
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a href="#" class="cabecalho__menu__item__opcao">Blog</a>
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a href="#" class="cabecalho__menu__item__opcao">Destaque</a>
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a href="#" class="cabecalho__menu__item__opcao">Institucional</a>
+                </li>
+                <li class="cabecalho__menu__item">
+                    <a href="#" class="cabecalho__menu__item__opcao">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <h1 class="titulo__principal title">Aplicativos na medida</h1>
+            <h4 class="titulo__texto">Apeperia tem um jeito inovador de comparar e montar aplicativos para pequenas e médias empresas.</h4>
+            <a class="titulo__botao botao" href="#">Conheça os planos</a>
+        </section>
+
+        <section class="container destaques">
+            <h3 class="destaques__titulo title">Destaques</h3>
+            <div class="destaques__container">
+                <img src="../Img/Destaque__IMG--01.png" alt="Destaque um" class="destaques__container__imagem">
+                <h4 class="destaques__container__texto title__h4">Conheça as primeiras etapas para a criação de um logotipo</h4>
+            </div>
+            <div class="destaques__container">
+                <img src="../Img/Destaque__IMG--02.png" alt="Destaque dois" class="destaques__container__imagem">
+                <h4 class="destaques__container__texto title__h4">Veja dicas de como fotografar usando seu celular</h4>
+            </div>
+            <a href="" class="botao destaques__container__botao">Receber destaques por email</a>
+        </section>
+
+        <section class="container infos">
+            <ul class="infos__lista">
+                <li class="infos__lista__item infos__tempo">
+                    <h3 class="title__h3 infos__lista__item__h3">Tempo</h3>
+                    <h4 class="title__h5">Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente aos prazos.</h4>
+                </li>
+                <li class="infos__lista__item infos__foco">
+                    <h3 class="title__h3 infos__lista__item__h3">Foco</h3>
+                    <h4 class="title__h5">Focamos no empreendimento! Oferecemos serviços de qualidade com preços acessíveis.</h4>
+                </li>
+                <li class="infos__lista__item infos__especialistas">
+                    <h3 class="title__h3 infos__lista__item__h3">Especialistas</h3>
+                    <h4 class="title__h5">Equipe experiente e especializada! Testamos todos os produtos antes do lançamento.</h4>
+                </li>
+            </ul>
+        </section>
+
+        <section class="sobre container">
+            <div class="sobre__conteudo">
+                <h2 class="title__h2 sobre__titulo">Sobre</h2>
+                <p class="sobre__texto">Criamos aplicativos personalizados para 
+                    <strong>todas as pessoas!</strong></p>
+                <p class="sobre__texto">A manutenção de um aplicativo não pode ser um custo extra 
+                    para o cliente, Na Apeperia você assina nosso serviço e a manutenção já está 
+                    inclusa. Assim, você não se preocupa com manutenção, é tudo por nossa conta.</p>
+                <p class="sobre__texto"><strong>Conte com uma equipe especializada e exclusiva pra 
+                    projetos incríveis em qualquer plataforma.</strong></p>
+                <div class="sobre__icones">
+                    <img src="../Img/icone__android.png" alt="Icone Android">
+                    <img src="../Img/icone__blackberry.png" alt="Icone BlackBerry">
+                    <img src="../Img/icone__apple.png" alt="Icone Apple">
+                    <img src="../Img/icone__windows.png" alt="Icone Windows">
+                </div>
+                <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p>
+            </div>
+            <img src="../Img/dois__caras__desktop.png" alt="Dois Caras Dashboard" class="sobre__img">
+        </section>
+
+        <section class="container planos">
+            <ul class="planos__opcoes">
+                <h2 class="title__h2 planos__titulo">Planos</h2>
+                <li class="planos__opcoes__item planos__opcoes__item__um">
+                    <h2 class="title__h2 planos__opcoes__item__titulo">Start</h2>
+                    <h1 class="planos__opcoes__item__preco title">R$ 500</h1>
+                    <p class="planos__opcoes__item__texto">5 manutenções mensais<br>
+                        App SEO<br>
+                        1 sistema operacional</p>
+                    <div class="planos__opcoes__item__caixa">
+                        <a href="" class="botao planos__opcoes__item__botao">Assinar plano</a>
+                    </div>
+                </li>
+
+                <li class="planos__opcoes__item planos__opcoes__item__dois">
+                    <h2 class="title__h2 planos__opcoes__item__titulo">Mega</h2>
+                    <h1 class="planos__opcoes__item__preco title">R$ 1000</h1>
+                    <p class="planos__opcoes__item__texto">10 manutenções mensais<br>
+                        App SEO<br>
+                        2 sistemas operacionais</p>
+                    <div class="planos__opcoes__item__caixa">
+                        <a href="" class="botao planos__opcoes__item__botao">Assinar plano</a>
+                    </div>
+                </li>
+
+                <li class="planos__opcoes__item planos__opcoes__item__tres">
+                    <h2 class="title__h2 planos__opcoes__item__titulo">Ultra</h2>
+                    <h1 class="planos__opcoes__item__preco title">R$ 1500</h1>
+                    <p class="planos__opcoes__item__texto">20 manutenções mensais<br>
+                        App SEO<br>
+                        4 sistemas operacionais<br>
+                        24h de atendimento
+                    </p>
+                    <div class="planos__opcoes__item__caixa">
+                        <a href="" class="botao planos__opcoes__item__botao">Assinar plano</a>
+                    </div>    
+                </li>
+            </ul>
+        </section>
+
+        <section class="container contato">
+            <h2 class="title__h2 contato__titulo">Contato</h2>
+            <p>Entre em contato com a gente</p>
+            <a href="#" class="contato__botao botao">Entre em contato</a>
+        </section>
+
+        <section class="institucional container">
+            <h2 class="title__h2 institucional__titulo">Institucional</h2>
+            <div class="institucional__box">
+                <p>Um pouco mais sobre a Apeperia</p>
+                <address class="institucional__address">
+                    <h2 class="title__h2 institucional__address__titulo">Rua Vergueiro, 3185 <br>
+                        Vila Mariana, São Paulo
+                    </h2>
+                    <p>
+                        <a href="tel:551155712751">(11) 5571-2751</a> ou <br>
+                        <a href="mailto:contato@apeperia.com">contato@apeperia.com</a>
+                    </p>
+                    
+                </address>
+            </div>
+            <video class="institucional__video" controls src="../Img/formacao-java.mp4"></video>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="rodape container">
+            <a class="rodape__imagem" href="">
+                <img src="../Img/Logo do Apeperia.png" alt="Logo Apeperia">
+            </a>
+            <div class="rodape__icones">
+                <a href="#">
+                    <img src="../Img/icone__facebook.svg" alt="Icone Facebook" title="Facebook">
+                </a>
+                <a href="#">
+                    <img src="../Img/icone__twitter.svg" alt="Icone Twitter" title="Twitter">
+                </a>
+                <a href="#">
+                    <img src="../Img/icone__instagram.svg" alt="Icone Instagram" title="Instagram">
+                </a>            
+            </div>
+            <ul class="rodape__links">
+                <li class="rodape__links__link" >
+                    <a href="#">Sobre</a>
+                </li>
+                <li class="rodape__links__link" >
+                    <a href="#">Planos</a>
+                </li>
+                <li class="rodape__links__link" >
+                    <a href="#">Blog</a>
+                </li>
+                <li class="rodape__links__link" >
+                    <a href="#">Destaques</a>
+                </li>
+                <li class="rodape__links__link" >
+                    <a href="#">Institucional</a>
+                </li>
+                <li class="rodape__links__link" >
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

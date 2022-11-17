@@ -1,0 +1,119 @@
+.planos{
+    background-color: var(--beje);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.planos__titulo{
+    margin-top: 1.8rem;
+
+    font-family: var(--fonte-montserrat);
+}
+
+.planos__opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.planos__opcoes:last-child{
+    margin-bottom: 1rem;
+}
+
+.planos__opcoes__item{
+    width: 80%;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px var(--preto-escuro);
+}
+
+.planos__opcoes__item__titulo{
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px var(--cinza-super-claro) solid;
+}
+
+.planos__opcoes__item__botao{
+    margin-bottom: 25px;
+}
+
+.planos__opcoes__item__um .planos__opcoes__item__titulo,
+.planos__opcoes__item__um .planos__opcoes__item__preco{
+    color: var(--azul-claro);
+}
+.planos__opcoes__item__um .planos__opcoes__item__botao{
+    width: 70%;
+    color: var(--azul-claro);
+    border-color: var(--azul-claro);
+}
+
+.planos__opcoes__item__dois .planos__opcoes__item__titulo,
+.planos__opcoes__item__dois .planos__opcoes__item__preco{
+    color: var(--roxo);
+}
+.planos__opcoes__item__dois .planos__opcoes__item__botao{
+    width: 70%;
+    color: var(--roxo);
+    border-color: var(--roxo);
+}
+
+.planos__opcoes__item__tres .planos__opcoes__item__titulo,
+.planos__opcoes__item__tres .planos__opcoes__item__preco{
+    color: var(--vermelho);
+}
+.planos__opcoes__item__tres .planos__opcoes__item__botao{
+    width: 70%;
+    color: var(--vermelho);
+    border-color: var(--vermelho);
+}
+
+.planos__opcoes__item__preco{
+    font-size: 3rem;
+}
+
+.planos__opcoes__item__texto{
+    line-height: 1.7rem;
+}
+
+.planos__opcoes__item__caixa{
+    width: 100%;
+
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 768px){
+    .planos__opcoes__item{
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .planos__opcoes{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .planos__titulo{
+        width: 100%;
+    }
+
+    .planos__opcoes__item{
+        width: 30%;
+        height: 340px;
+    }
+}
