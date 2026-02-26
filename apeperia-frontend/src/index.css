@@ -1,0 +1,225 @@
+/* ==========================================
+   APEPERIA — Global Design System
+   ========================================== */
+
+/* --- CSS Reset --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+/* --- CSS Custom Properties --- */
+:root {
+  /* Colors */
+  --azul: #0084FF;
+  --azul-escuro: #00161C;
+  --azul-profundo: #000D11;
+  --azul-claro: #56CCF2;
+  --roxo: #B04CD9;
+  --vermelho: #E33B3B;
+  --white: #ffffff;
+  --cinza: #333333;
+  --cinza-claro: #4F4C4C;
+  --cinza-super-claro: #DFE3E5;
+  --laranja: #B72E2E;
+  --beje: #F7F4F4;
+  --preto-escuro: rgba(0, 0, 0, 0.063);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+  /* Fonts */
+  --fonte-montserrat: 'Montserrat', sans-serif;
+  --fonte-sans: 'Open Sans', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Spacing */
+  --container-padding: 20px;
+  --section-gap: 80px;
+}
+
+/* --- Base Typography --- */
+body {
+  font-size: 16px;
+  font-family: var(--fonte-sans);
+  color: var(--cinza);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-montserrat);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* --- Utility Classes --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--cinza-claro);
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--azul-claro), var(--roxo));
+  border-radius: 2px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--fonte-montserrat);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left var(--transition-medium);
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--azul), var(--azul-claro));
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(0, 132, 255, 0.3);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 132, 255, 0.45);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: currentColor;
+}
+
+.btn--outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(86, 204, 242, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(86, 204, 242, 0.4); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* --- Responsive --- */
+@media screen and (min-width: 768px) {
+  :root {
+    --container-padding: 40px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --container-padding: 52px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,80 @@
+/* ==========================================
+   CONTATO SECTION
+   ========================================== */
+
+.contato {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contato__subtitle {
+    color: var(--cinza-claro);
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contato__input,
+.contato__textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    font-family: var(--fonte-sans);
+    border: 2px solid var(--cinza-super-claro);
+    border-radius: var(--radius-sm);
+    background: var(--white);
+    color: var(--cinza);
+    transition: all var(--transition-fast);
+    outline: none;
+}
+
+.contato__input:focus,
+.contato__textarea:focus {
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0 4px rgba(86, 204, 242, 0.1);
+}
+
+.contato__input::placeholder,
+.contato__textarea::placeholder {
+    color: #aaa;
+}
+
+.contato__textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contato__btn {
+    align-self: center;
+    min-width: 200px;
+}
+
+.contato__success {
+    background: linear-gradient(135deg, #10B981, #059669);
+    color: var(--white);
+    padding: 16px 24px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    animation: fadeInUp 0.4s ease-out;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .contato {
+        padding: 80px 40px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .contato {
+        padding: 100px 52px;
+    }
+}
