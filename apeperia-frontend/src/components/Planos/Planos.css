@@ -1,0 +1,144 @@
+/* ==========================================
+   PLANOS SECTION
+   ========================================== */
+
+.planos {
+    background: var(--beje);
+    padding: 80px 20px;
+}
+
+.planos__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.planos__card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 0;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all var(--transition-medium);
+    overflow: hidden;
+    position: relative;
+}
+
+.planos__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--card-accent);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.planos__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.planos__card__header {
+    width: 100%;
+    padding: 24px 0 16px;
+    text-align: center;
+    border-bottom: 1px solid var(--cinza-super-claro);
+}
+
+.planos__card__name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--card-accent);
+    font-family: var(--fonte-montserrat);
+}
+
+.planos__card__price {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--card-accent);
+    font-family: var(--fonte-montserrat);
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+.planos__card__features {
+    text-align: center;
+    line-height: 2;
+    font-size: 0.95rem;
+    color: var(--cinza);
+    padding: 0 24px;
+}
+
+.planos__card__cta-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px 28px;
+    margin-top: auto;
+}
+
+.planos__card__btn {
+    width: 80%;
+    color: var(--card-accent);
+    border-color: var(--card-accent);
+    font-weight: 700;
+}
+
+.planos__card__btn:hover {
+    background: var(--card-accent);
+    color: var(--white);
+}
+
+.planos__loading {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--cinza-claro);
+    padding: 40px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .planos {
+        padding: 80px 40px;
+    }
+
+    .planos__card {
+        max-width: 400px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .planos {
+        padding: 100px 52px;
+    }
+
+    .planos__grid {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .planos__card {
+        width: 30%;
+        max-width: none;
+    }
+
+    .planos__card:nth-child(2) {
+        transform: scale(1.05);
+    }
+
+    .planos__card:nth-child(2):hover {
+        transform: scale(1.05) translateY(-8px);
+    }
+}

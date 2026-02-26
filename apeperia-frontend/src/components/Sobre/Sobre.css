@@ -1,0 +1,118 @@
+/* ==========================================
+   SOBRE SECTION
+   ========================================== */
+
+.sobre {
+    padding: 80px 20px;
+}
+
+.sobre__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sobre__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sobre__text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--cinza);
+}
+
+.sobre__text strong {
+    font-weight: 700;
+    color: var(--cinza-claro);
+}
+
+.sobre__platforms {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px 0;
+}
+
+.sobre__platform-icon {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: var(--beje);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__platform-icon:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul));
+    box-shadow: 0 4px 15px rgba(0, 132, 255, 0.25);
+}
+
+.sobre__platform-icon:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.sobre__platform-icon img {
+    width: 20px;
+    height: 20px;
+    transition: filter var(--transition-fast);
+}
+
+.sobre__caption {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--cinza-claro);
+    font-weight: 500;
+}
+
+.sobre__image {
+    display: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .sobre {
+        padding: 100px 52px;
+    }
+
+    .sobre__inner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sobre__content {
+        flex: 1;
+    }
+
+    .sobre .section-title {
+        text-align: left;
+    }
+
+    .sobre .section-title::after {
+        left: 0;
+        transform: none;
+    }
+
+    .sobre__platforms {
+        justify-content: flex-start;
+    }
+
+    .sobre__caption {
+        text-align: left;
+    }
+
+    .sobre__image {
+        display: block;
+        max-width: 400px;
+        margin-left: 60px;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        animation: float 6s ease-in-out infinite;
+    }
+}
