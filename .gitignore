@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+
+# Build e cache
+apeperia-frontend/dist/
+apeperia-frontend/.vite/
+apeperia-backend/target/
+
+# Ambiente — nunca versionar chaves reais
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# SO
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
